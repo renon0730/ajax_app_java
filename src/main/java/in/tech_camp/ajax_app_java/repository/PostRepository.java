@@ -18,6 +18,6 @@ public interface PostRepository {
   @Options(useGeneratedKeys = true,keyProperty = "id")
   void insert(PostEntity post);
 
-  @Select("SELECT * FORM posts WHERE id = #{id}")
+  @Select("SELECT * FROM posts WHERE id = #{id}")
   PostEntity findById(int id);
 }
